@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeZone | Step into Style</title>
+    <link rel="stylesheet" href="style.css">
+
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+/>
+
+
+</body>
+
+
+</head>
+<body>
+    <header class="navbar">
+        
+        <div class="container navbar-content">
+            <a href="#" class="logo">Shoe<span>Zone</span></a>
+
+<button
+  class="menu-toggle"
+  id="menu-toggle"
+  type="button"
+  aria-label="Open navigation menu"
+  aria-expanded="false"
+  aria-controls="nav-links"
+>
+  <i class="fa-solid fa-bars" aria-hidden="true"></i>
+</button>
+
+
+            <nav class="nav-links" id="nav-links">
+                <a href="#hero">Home</a>
+                <a href="#categories">Shop</a>
+                <a href="#benefits">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <a href="#products" class="nav-button">Shop Now</a>
+
+<button class="cart-button" id="cart-button" type="button">
+  <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+  Cart (<span id="cart-count">0</span>)
+</button>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container hero-content">
+             <div class="hero-text">
+                <p class="hero-label">STEP INTO STYLE</p>
+
+                <h1>Find Your Perfect Pair.</h1>
+
+                <p class="hero-description">
+                    Discover stylish shoes for every occasion.
+                    Find your next favourite pair at ShoeZone.
+                </p>
+
+                <a href="#products" class="hero-button">
+                    Shop Collection →
+                </a>
+             </div>
+
+             <div class="hero-image">
+                <img src="img8.png" alt="Stylish sneaker">
+             </div>
+             </div>
+        </section>
+        
+<section id="categories" class="categories-section">
+  <div class="container">
+    <div class="categories-heading">
+      <p class="section-label">EXPLORE OUR RANGE</p>
+      <h2>Shop by Category</h2>
+      <p class="section-description">
+        Find the right shoes for your style and occasion.
+      </p>
+    </div>
+
+    <div class="category-grid">
+      <a href="#products" class="category-card">
+        <img src="img9.png" alt="Casual sneakers">
+        <h3>Sneakers</h3>
+        <p>Everyday style</p>
+      </a>
+
+      <a href="#products" class="category-card">
+        <img src="img3.png" alt="Sports shoes">
+        <h3>Sports Shoes</h3>
+        <p>Made for movement</p>
+      </a>
+
+      <a href="#products" class="category-card">
+        <img src="img5.png" alt="Formal leather shoes">
+        <h3>Formal Shoes</h3>
+        <p>Look sharp</p>
+      </a>
+
+      <a href="#products" class="category-card">
+        <img src="sandals.png" alt="Casual sandals">
+        <h3>Sandals</h3>
+        <p>Easy everyday comfort</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+        
+<section id="products" class="products-section">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="section-label">OUR COLLECTION</p>
+        <h2>Featured Shoes</h2>
+        <p class="section-description">
+          Discover your next favourite pair.
+        </p>
+      </div>
+
+      <a href="#contact" class="view-all">View All →</a>
+    </div>
+
+<div class="product-filters">
+  <input
+    type="search"
+    id="product-search"
+    placeholder="Search for shoes..."
+    aria-label="Search shoes"
+  />
+
+  <select id="category-filter" aria-label="Filter by category">
+    <option value="all">All Categories</option>
+    <option value="Casual Shoes">Casual Shoes</option>
+    <option value="Sports Shoes">Sports Shoes</option>
+    <option value="Formal Shoes">Formal Shoes</option>
+  </select>
+</div>
+
+
+    <div class="product-grid">
+      <article class="product-card">
+        <img src="img6.png" alt="White casual sneakers">
+
+        <div class="product-info">
+          <p class="product-category">Casual Shoes</p>
+          <h3>Classic Black Sneakers</h3>
+          <p class="product-price">KSh 2,500</p>
+
+<label for="size-black">Shoe size</label>
+<select id="size-black" class="shoe-size">
+  <option value="">Choose size</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+  <option value="43">43</option>
+  <option value="44">44</option>
+</select>
+
+          
+<button
+  class="product-button"
+  type="button"
+  data-name="Classic Black Sneakers"
+  data-price="2500"
+>
+  Order Now
+</button>
+
+<button
+  class="add-to-cart-button"
+  type="button"
+  data-name="Classic Black Sneakers"
+  data-price="2500"
+>
+  Add to Cart
+</button>
+
+
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="img2.png" alt="Black running shoes">
+
+        <div class="product-info">
+          <p class="product-category">Sports Shoes</p>
+          <h3>Everyday Running Shoes</h3>
+          <p class="product-price">KSh 3,000</p>
+
+<label for="size-running">Shoe size</label>
+<select id="size-running" class="shoe-size">
+  <option value="">Choose size</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+  <option value="43">43</option>
+  <option value="44">44</option>
+</select>
+
+          
+<button
+  class="product-button"
+  type="button"
+  data-name="Everyday Running Shoes"
+  data-price="3000"
+>
+  Order Now
+</button>
+
+<button
+  class="add-to-cart-button"
+  type="button"
+  data-name="Everyday Running Shoes"
+  data-price="3000"
+>
+  Add to Cart
+</button>
+
+
+        </div>
+      </article>
+
+      <article class="product-card">
+        <img src="img7.png" alt="Brown leather shoes">
+
+        <div class="product-info">
+          <p class="product-category">Formal Shoes</p>
+          <h3>Classic Formal Shoes</h3>
+          <p class="product-price">KSh 3,500</p>
+
+<label for="size-formal">Shoe size</label>
+<select id="size-formal" class="shoe-size">
+  <option value="">Choose size</option>
+  <option value="39">39</option>
+  <option value="40">40</option>
+  <option value="41">41</option>
+  <option value="42">42</option>
+  <option value="43">43</option>
+  <option value="44">44</option>
+</select>
+
+          
+<button
+  class="product-button"
+  type="button"
+  data-name="Classic Formal Shoes"
+  data-price="3500"
+>
+  Order Now
+</button>
+
+<button
+  class="add-to-cart-button"
+  type="button"
+  data-name="Classic Formal Shoes"
+  data-price="3500"
+>
+  Add to Cart
+</button>
+
+
+        </div>
+      </article>
+    </div>
+    <p id="no-products-message" hidden>
+  No shoes found. Try another search or category.
+</p>
+  </div>
+</section>
+
+
+<section id="shopping-cart" class="shopping-cart-section">
+  <div class="container">
+    <h2>Your Shopping Cart</h2>
+
+    <div id="cart-items">
+      <p class="empty-cart">Your cart is empty.</p>
+    </div>
+
+    <div class="cart-summary">
+      <p>Total: <strong id="cart-total">KSh 0</strong></p>
+
+      <button id="checkout-button" class="product-button" type="button">
+        Order Cart on WhatsApp
+      </button>
+      <button id="clear-cart-button"  type="button" class="clear-cart-button">
+  Clear Cart
+</button>
+    </div>
+  </div>
+</section>
+
+
+        
+<section id="benefits" class="benefits-section">
+  <div class="container">
+    <div class="benefits-heading">
+      <p class="section-label">THE SHOEZONE DIFFERENCE</p>
+      <h2>Why Shop With Us?</h2>
+      <p class="section-description">
+        Great shoes, fair prices, and a simple shopping experience.
+      </p>
+    </div>
+
+    <div class="benefits-grid">
+      <article class="benefit-card">
+        <div class="benefit-icon">✓</div>
+        <h3>Quality Shoes</h3>
+        <p>
+          Explore footwear selected for style and everyday comfort.
+        </p>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-icon">KSh</div>
+        <h3>Fair Prices</h3>
+        <p>
+          Find stylish options to suit different budgets.
+        </p>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-icon">↗</div>
+        <h3>Easy Ordering</h3>
+        <p>
+          Contact us directly to ask about sizes, prices, and availability.
+        </p>
+      </article>
+
+      <article class="benefit-card">
+        <div class="benefit-icon">♡</div>
+        <h3>Customer Care</h3>
+        <p>
+          Get help choosing a pair that suits your needs.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact-section">
+  <div class="container contact-content">
+    <div class="contact-text">
+      <p class="section-label">GET IN TOUCH</p>
+      <h2>Found Your Perfect Pair?</h2>
+      <p>
+        Have a question or want to place an order?
+        Reach out using any of the contacts below.
+      </p>
+
+      <div class="contact-details">
+        <a
+          href="https://wa.me/254700024206"
+          class="contact-item whatsapp-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          <span>Chat with us on WhatsApp</span>
+        </a>
+
+        <a href="tel:+254700024206" class="contact-item">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i>
+          <span>+254 700024206</span>
+        </a>
+
+        <a href="mailto:samwelchimbuko.com" class="contact-item">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+          <span>samwelchimbuko.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+    <a href="#" class="logo footer-logo">
+      Shoe<span>Zone</span>
+    </a>
+
+    <p>Step into style. Find your perfect pair.</p>
+
+    <nav class="footer-links" aria-label="Footer navigation">
+      <a href="#hero">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <p class="copyright">
+      &copy; 2026 ShoeZone. All rights reserved.
+    </p>
+  </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
